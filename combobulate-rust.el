@@ -93,6 +93,13 @@
                      parent
                      :match-children t))
 
+	 (:activation-nodes
+          ((:nodes ((rule "parameters"))
+            :has-parent ("parameters")))
+          :selector (:choose
+                     parent
+                     :match-children t))
+
          (:activation-nodes
           ((:nodes ((rule "block"))
             :position at
